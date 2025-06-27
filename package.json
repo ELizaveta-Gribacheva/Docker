@@ -1,0 +1,12 @@
+{
+    "name": "brackets-checker",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+       "test": "tsc && node dist/test.js"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.4",
+        "typescript": "^5.0.0"
+    }
+}
