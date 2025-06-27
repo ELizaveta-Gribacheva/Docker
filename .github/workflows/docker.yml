@@ -1,14 +1,18 @@
-permissions:
+  permissions:
     contents: read       
-    packages: write      
+    packages: write     
   
   name: CI with Docker
   
   on:
     push:
-      branches: [ main, feature/docker-setup ]
+      branches:
+        - main
+        - feature/docker-setup
     pull_request:
-      branches: [ main, feature/docker-setup ]
+      branches:
+        - main
+        - feature/docker-setup
   
   jobs:
     docker-ci:
@@ -38,6 +42,6 @@ permissions:
   
         - name: Pull image and run tests
           run: |
-            docker pull ghcr.io/elizaveta-gribacheva/brackets-checker:latest
+            docker pull ghcr.io/elizaveta-bribacheva/brackets-checker:latest
             docker run --rm ghcr.io/elizaveta-gribacheva/brackets-checker:latest
   
