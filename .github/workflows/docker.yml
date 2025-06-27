@@ -2,9 +2,9 @@ name: CI with Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, feature/docker-setup ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, feature/docker-setup ]
 
 jobs:
   docker-ci:
