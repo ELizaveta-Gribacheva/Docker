@@ -39,9 +39,11 @@
             push: true
             tags: |
               ghcr.io/elizaveta-gribacheva/brackets-checker:latest
+
   
         - name: Pull image and run tests
           run: |
-            docker pull ghcr.io/elizaveta-bribacheva/brackets-checker:latest
+            docker pull ghcr.io/elizaveta-gribacheva/brackets-checker:latest
             docker run --rm ghcr.io/elizaveta-gribacheva/brackets-checker:latest
+
   
